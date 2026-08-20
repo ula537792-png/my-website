@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverium — Premium Script Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-canvas">
+        <div class="cyber-waves"></div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="cyber-grid"></div>
+        <div class="mouse-glow" id="mouseGlow"></div>
+    </div>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">INVERIUM</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="scripts.html" class="nav-link">Scripts</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://discord.com" target="_blank" rel="noopener" class="btn btn-discord">
+                    <i data-lucide="message-square"></i>
+                    <span>Discord</span>
+                </a>
+                <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-content">
+            <a href="index.html" class="drawer-link active">Home</a>
+            <a href="scripts.html" class="drawer-link">Scripts</a>
+            <a href="#faq" class="drawer-link">FAQ</a>
+            <a href="https://discord.com" target="_blank" rel="noopener" class="btn btn-discord btn-full">
+                <i data-lucide="message-square"></i>
+                <span>Discord</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="app-container">
+        <main>
+            <section class="hero-section">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <div class="badge">
+                            <span class="badge-icon">✦</span>
+                            <span>NEXT-GEN SCRIPT ECOSYSTEM</span>
+                        </div>
+                        <h1 class="hero-title">
+                            UNLOCK<br>
+                            <span class="gradient-text">THE NEXT LEVEL.</span>
+                        </h1>
+                        <p class="hero-description">
+                            Discover high-performance verified gaming scripts and utilities powered by Inverium.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="scripts.html" class="btn btn-primary">
+                                <span>EXPLORE SCRIPTS</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                            <a href="https://discord.com" target="_blank" rel="noopener" class="btn btn-secondary">
+                                <span>JOIN DISCORD</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-dashboard">
+                        <div class="glass-card terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="terminal-title">INVERIUM TERMINAL</div>
+                                <div class="terminal-status">
+                                    <span class="status-dot"></span>
+                                    <span>ONLINE</span>
+                                </div>
+                            </div>
+                            <div class="terminal-metrics">
+                                <div class="metric-box">
+                                    <span class="metric-label">SCRIPTS</span>
+                                    <span class="metric-value">4</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-label">USERS</span>
+                                    <span class="metric-value">1.4K</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-label">UPTIME</span>
+                                    <span class="metric-value">99.9%</span>
+                                </div>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="line">&gt; initializing core modules...</div>
+                                <div class="line">&gt; syncing database repository...</div>
+                                <div class="line success">&gt; system operational ✓</div>
+                                <div class="line">&gt; <span class="blinking-cursor">_</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="container stats-container">
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">GAMES</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">SCRIPTS</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="1.4" data-decimal="1">0</div><span class="stat-suffix">K</span>
+                        <div class="stat-label">ACTIVE USERS</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="99.9" data-decimal="1">0</div><span class="stat-suffix">%</span>
+                        <div class="stat-label">UPTIME</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">FEATURED SCRIPTS</h2>
+                            <p class="section-subtitle">Top verified utilities for your favorite games.</p>
+                        </div>
+                        <a href="scripts.html" class="view-all-link">
+                            <span>VIEW ALL</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="scripts-grid" id="featuredScriptsGrid"></div>
+                </div>
+            </section>
+
+            <section class="section" id="faq">
+                <div class="container">
+                    <div class="section-header center">
+                        <h2 class="section-title">FAQ</h2>
+                        <p class="section-subtitle">Got questions? We've got answers.</p>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-item glass-card">
+                            <button class="faq-question"><span>Are scripts updated regularly?</span><i data-lucide="chevron-down"></i></button>
+                            <div class="faq-answer"><p>Yes, our scripts are constantly monitored and patched instantly upon game updates.</p></div>
+                        </div>
+                        <div class="faq-item glass-card">
+                            <button class="faq-question"><span>Is Inverium completely free?</span><i data-lucide="chevron-down"></i></button>
+                            <div class="faq-answer"><p>All scripts and utilities hosted here are 100% free to use.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo"><span class="logo-icon">✦</span><span class="logo-text">INVERIUM</span></a>
+                    <p class="footer-desc">Premium Script Hub. The ultimate repository for high-performance utilities.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>PRODUCT</h4>
+                    <ul><li><a href="scripts.html">Scripts</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>COMMUNITY</h4>
+                    <ul><li><a href="https://discord.com" target="_blank" rel="noopener">Discord</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SYSTEM STATUS</h4>
+                    <div class="status-indicator-box glass-card"><span class="status-dot pulsing"></span><span>ALL SYSTEMS OPERATIONAL</span></div>
+                </div>
+            </div>
+            <div class="footer-bottom"><div class="container"><p>&copy; 2026 Inverium Hub. All rights reserved.</p></div></div>
+        </footer>
+    </div>
+
+    <div class="toast" id="toast"><i data-lucide="check-circle"></i><span id="toastMessage">Copied!</span></div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
